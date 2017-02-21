@@ -5,6 +5,16 @@
 	padding-bottom: 15px;
 }
 
+.read-more{
+	font-size: 13px;
+}
+
+.read-more .fa {
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+}
+
 /* ======= End Base ======= */
 
 /* ======== footer ============ */
@@ -48,8 +58,34 @@
 	background: #f5f5f5;
 }
 
-.home-page .lastnews{
+.home-page .news{
 	position: relative;	
+}
+
+.home-page .news h2.title {
+    font-size: 18px;
+    margin-top: 0;
+    font-family: 'open sans', arial, sans-serif;
+	font-weight: 300;
+}
+
+.home-page .news .news-item{
+	padding-left: 115px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.home-page .news .news-item .thumb{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 5px;
+	top: 0;
+	 object-fit: cover;
+}
+
+.home-page .news .news-item p{
+	font-size: 13px;
 }
 
 .home-page .interesting-sites{
@@ -91,6 +127,7 @@
 	padding-bottom: 15px;
 	border-bottom: 1px solid #e8e8e8;
 }
+
 
 /* ======= End Home Page ======= */
 
