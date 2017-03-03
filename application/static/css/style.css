@@ -14,6 +14,7 @@
     top: 1px;
     margin-left: 5px;
 }
+
 {
    font-family: 'open sans', arial, sans-serif;
 }
@@ -83,7 +84,7 @@
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #F1C40F;
+    color: #009EE0;
     text-decoration: none;
     background-color: transparent;
     transition: color 0.1s ease-in-out;
