@@ -1,5 +1,5 @@
 <?php
-require_once 'static/html/header.html';
-require_once 'static/html/home.html';
-require_once 'static/html/footer.html';
+require_once 'header.html';
+require_once 'home.html';
+require_once 'footer.html';
 ?>
