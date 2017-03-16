@@ -10,7 +10,7 @@ class StandardView {
         $dict = array(            
             '{CONTENIDO}'=>$contenido,
             '{TITULO}'=>$titulo,
-            '{USUARIO}'=>$_SESSION['alias']
+            //'{USUARIO}'=>$_SESSION['alias']
             );
         $template = file_get_contents($this->template_file);
         print str_replace(array_keys($dict), array_values($dict), $template);
