@@ -1,6 +1,6 @@
 <?php 
 
-require "noticia.php";
+//require "noticia.php";
 
 class Site {
     
@@ -9,14 +9,14 @@ class Site {
 
 class SiteView extends StandardView{
 
-    function home($obj){
-        /*$html = file_get_contents(DIR_HTML."home.html");
-        print $this->render_template($html);   */
-
+    function home(){
+        $html = file_get_contents(DIR_HTML."home.html");
+        print $this->render_template($html);   
+/*
         $this->template_file = HTML_BASE;
         $tabla = file_get_contents(DIR_HTML ."home.html");
         $form = $this->render_regex("listado", $tabla, $obj);
-        print $this->render_template($form,"Listar Noticia");
+        print $this->render_template($form,"Listar Noticia");*/
     }
 
     function biografia(){
@@ -38,7 +38,11 @@ class SiteView extends StandardView{
 
 class SiteController extends StandardController {
 
- function home($obj){
+ function home(){
+    $this->view->home();
+    }
+/*
+    function home($obj){
     $collector = new collectorObject();
     $collector->get ('noticia'); 
     $this->view->home($collector->collection);
@@ -60,7 +64,7 @@ class SiteController extends StandardController {
         $this->view->noticia($noticia);
     }
     
-
+*/
 }
 
  ?>

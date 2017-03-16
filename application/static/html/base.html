@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">	
-	<head>
+<head>
 		<title>Liceo Jorge Alessandri Rodriguez</title>		
-		<link rel="stylesheet"  href="static/css/bootstrap.min.css">
-		<link rel="stylesheet"  href="static/css/font-awesome.css">
-		<link rel="stylesheet"	href="static/css/style.css">
-	</head>
+		<link rel="stylesheet"  href="/static/css/bootstrap.min.css">
+		<link rel="stylesheet"  href="/static/css/font-awesome.css">
+		<link rel="stylesheet"	href="/static/css/style.css">
+</head>
 
 	<body>
 		<!-- begin Menu navbar -->	
@@ -25,16 +25,16 @@
 	        <!-- Collect the nav links, forms, and other content for toggling -->
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	        	<ul class="nav navbar-nav nav-left">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="profile.html">Profile</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="active"><a href="/site/home">Home</a></li>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 				<a href="#" class="logo visible-lg visible-md"><img src="/static/img/logos/logo-medium.png" alt="dodolan manuk responsive catalog themes"></a>
 				<div id="brand" class="visible-lg visible-md">&nbsp;</div>
 				<ul class="nav navbar-nav nav-right">
-					<li><a href="pricing.html">Price</a></li>
-					<li><a href="order.html">Order</a></li>
+					<li><a href="#">Price</a></li>
+					<li><a href="#">Order</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -68,10 +68,42 @@
       	</div>
     </nav>
 	<!-- End Menu navbar-->
+	<main>
+		<div>
+			{CONTENIDO}
+		</div>		
+	</main>
 
-	<footer>
-		
-	</footer>
+	<footer class="footer">	
+		<div class="container">
+			<div class="col-md-4">
+				<h4>CONTACTO</h4>
+				<p class="time"><i class="fa fa-map-marker"></i> Calle la Cruz #1722 - Villa el Parque,<br> Las Compañias - La Serena</p>
+				<p class="time"><i class="fa fa-phone"></i> 51 2253807</p>
+				<p class="time"><i class="fa fa-envelope-o"></i> liceojorgealessandri@corporacionggv.cl</p>
+			</div>
+			<div class="col-md-5">
+				<h4>SUSCRIBETE</h4>
+				<p>Suscribete para recibir nuestros boletines en tu email</p>
+				<div class="input-group">
+					<input class="form-control" type="text" name="mail" placeholder="Ingrese su correo electronico"> 
+					<span class="input-group-btn">
+			        <button class="btn btn-primary" type="button">Suscribete!</button></span>
+				</div>
+			
+			</div>
+			<div class="col-md-3">
+				<h4>SIGUENOS</h4>
+			</div>
+		</div>		
+		<div class="bottom-bar">
+			<div class="container">
+				Copyright @ 2017 Liceo Jorge Alessandri Rodriguez - La Serena | Departamento de informática 
+			</div>
+			
+		</div>
+</footer>
+
 		<script type="text/javascript" src="/static/js/jquery.min.js"></script>  
 		<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 	</body>
