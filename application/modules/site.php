@@ -19,8 +19,8 @@ class SiteView extends StandardView{
         print $this->render_template($form,"Listar Noticia");*/
     }
 
-    function biografia(){
-        $html = file_get_contents(DIR_HTML."biografia.html");
+    function careers(){
+        $html = file_get_contents(DIR_HTML."careers.html");
         print $this->render_template($html);     
     }
 
@@ -47,12 +47,12 @@ class SiteController extends StandardController {
     $collector->get ('noticia'); 
     $this->view->home($collector->collection);
     }
-
-    function biografia(){
-        $this->view->biografia();
+*/
+    function careers(){
+        $this->view->careers();
 
     }
-
+/*
     function propuestas(){
         $this->view->propuestas();
     }
