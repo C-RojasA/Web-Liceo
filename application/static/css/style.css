@@ -117,8 +117,7 @@
 /* ======================= footer ============================ */
 .footer{	
 	background: #444444;
-	color: #dcdcdc;
-	padding-top: 15px;
+	color: #dcdcdc;	
 }
 .footer h4{	
 	padding-bottom: 15px;
@@ -250,31 +249,54 @@
 /* ======================= End Slider ============================ */
 
 /* ======================= Begin Careers ============================ */
+/*
 .careers-page .logo{
 	width: 60px;
 }
 .careers-page .top-space{
 	margin-top: 50px;
-	background-color: #068166;
-	
-	padding: 20px;
+	background-color: #068166;	
+	padding: 10px;
 }
 .careers-page .top-space .logo{
 	margin: 20px;
 	float:left;
+}*/
+.logo-careers{
+	position: relative;
+	z-index: 2;
+	top:-400px;
+	left: 50px;
 }
-.careers-page .top-space .title{
-	color: white;
-	text-shadow: 2px -2px 2px #aaa;
+.careers-page .carerrs-box .title{	
+	position: relative;
+	top: -510px;
+	margin-left: 30px;
+	z-index: 2;
 }
-.careers-page .profile-box{
+.careers-page .carerrs-box .carerrs-img{
+	float: right;
 	width: 100%;
-	margin-bottom: 25px;
-	background-color: #009EE0;
-	padding: 15px;
+	object-fit: cover;
+	position: relative;
+	top:40px;
+	min-height: 400px;
+	max-height: 630px;
+	z-index: 1;
 }
-.careers-page .profile{
-	padding: 15px;
+.careers-page .carerrs-box .description{	
+	position: relative;
+	width: 200px;
+	top: -500px;
+	left: 40px;
+	z-index: 3;
+}
+.careers-page .carerrs-box .profile-box{
+	position: relative;
+	width: 100%;
+	z-index: 2;	
+	background-color: #009EE0;
+	padding: 10px;
 }
 
 /* ======================= End Careers ============================ */
