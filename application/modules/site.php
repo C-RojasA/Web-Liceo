@@ -24,8 +24,8 @@ class SiteView extends StandardView{
         print $this->render_template($html);     
     }
 
-    function propuestas(){
-        $html = file_get_contents(DIR_HTML."propuestas.html");
+    function we(){
+        $html = file_get_contents(DIR_HTML."we.html");
         print $this->render_template($html);     
     }
 
@@ -50,13 +50,11 @@ class SiteController extends StandardController {
 */
     function careers(){
         $this->view->careers();
-
     }
-/*
-    function propuestas(){
-        $this->view->propuestas();
+     function we(){
+        $this->view->we();
     }
-
+/* 
     function noticia($id = 0){
         $noticia = new Noticia();
         $noticia->noticia_id = $id;
