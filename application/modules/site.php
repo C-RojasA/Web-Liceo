@@ -19,18 +19,27 @@ class SiteView extends StandardView{
         print $this->render_template($form,"Listar Noticia");*/
     }
 
-    function biografia(){
-        $html = file_get_contents(DIR_HTML."biografia.html");
+    function careers(){
+        $html = file_get_contents(DIR_HTML."careers.html");
         print $this->render_template($html);     
     }
 
-    function propuestas(){
-        $html = file_get_contents(DIR_HTML."propuestas.html");
+    function we(){
+        $html = file_get_contents(DIR_HTML."we.html");
+        print $this->render_template($html);     
+    }
+
+    function history(){
+        $html = file_get_contents(DIR_HTML."history.html");
         print $this->render_template($html);     
     }
 
     function noticia($noticia = null){        
-        $html = file_get_contents(DIR_HTML."noticia.html");
+        $html = file_get_contents(DIR_HTML."noticia.html");function we(){
+        $html = file_get_contents(DIR_HTML."we.html");
+        print $this->render_template($html);     
+    }
+
         $estatica = $this->render_dict($noticia, $html);
         print $this->render_template($estatica);     
     }
@@ -47,16 +56,19 @@ class SiteController extends StandardController {
     $collector->get ('noticia'); 
     $this->view->home($collector->collection);
     }
-
-    function biografia(){
-        $this->view->biografia();
-
+*/
+    function careers(){
+        $this->view->careers();
     }
 
-    function propuestas(){
-        $this->view->propuestas();
+     function we(){
+        $this->view->we();
     }
 
+     function history(){
+        $this->view->history();
+    }
+/*
     function noticia($id = 0){
         $noticia = new Noticia();
         $noticia->noticia_id = $id;

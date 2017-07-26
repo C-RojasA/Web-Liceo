@@ -32,16 +32,22 @@
 	        <!-- Collect the nav links, forms, and other content for toggling -->
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	        	<ul class="nav navbar-nav nav-left">
-					<li><a href="#">Nosotros</a></li>					
-					<li><a href="/static/html/especialidades.html">Especialidades</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nosotros <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="we">Misión y Visión</a></li>
+							<li><a href="history">Historia</a></li>							
+						</ul>						
+					</li>					
+					<li><a href="careers">Especialidades</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Educación Adultos <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-						  	<li><a href="http://www.corporacionlaserena.cl/moodle/login/index.php">Plataforma Educativa</a></li>
+						  	<li><a href="http://170.239.84.161/aula_virtual">Plataforma Educativa</a></li>
 						</ul>
 					</li>			
 				</ul>
-				<a href="#" class="logo visible-lg visible-md"><img src="/static/img/logos/logo-medium.png" alt="dodolan manuk responsive catalog themes"></a>
+				<a href="/" class="logo visible-lg visible-md"><img src="/static/img/logos/logo-medium.png" alt="dodolan manuk responsive catalog themes"></a>
 				<div id="brand" class="visible-lg visible-md">&nbsp;</div>
 				<ul class="nav navbar-nav nav-right">
 					<li><a href="#">Academias</a></li>
@@ -54,10 +60,8 @@
       	</div>
     </nav>
 	<!-- End Menu navbar-->
-	<main>
-		<div>
+	<main>		
 			{CONTENIDO}
-		</div>		
 	</main>
 
 <footer class="footer">	
@@ -75,8 +79,7 @@
 					<input class="form-control" type="text" name="mail" placeholder="Ingrese su correo electronico"> 
 					<span class="input-group-btn">
 			        <button class="btn btn-primary" type="button">Suscribete!</button></span>
-				</div>
-			
+				</div>			
 			</div>
 			<div class="col-md-3">
 				<h4>SIGUENOS</h4>
@@ -85,12 +88,11 @@
 		<div class="bottom-bar">
 			<div class="container">
 				Copyright @ 2017 Liceo Jorge Alessandri Rodriguez - La Serena | Departamento de informática 
-			</div>
-			
+			</div>			
 		</div>
 </footer>
 
 		<script type="text/javascript" src="/static/js/jquery.min.js"></script>  
 		<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-	</body>
+</body>
 </html>
