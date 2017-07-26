@@ -231,17 +231,8 @@
 }
 #home-slider .carousel-control {
 	width:10%;
-}/*
-#home-slider .carousel-control i {
-	position:absolute;
-	top:30px;
-	left:0;
-	z-index:5;
-	display:inline-block;
-	width:50px;
-	height: 50px;
-	margin-left:0px;
-}*/
+}
+
 #home-slider .carousel-control.left,#home-slider .carousel-control.right {
 	margin-top: 18%;
 }
@@ -252,46 +243,47 @@
 .carerrs-box{
 	margin-top: 60px;
 	width: 100%;
-	height: 700px;
+	height: 680px;
 }
 .carerrs-box img{
 	position: absolute;
 	object-fit: cover;	
 	width: 100%;
-	z-index: 1;
 }
 .carerrs-box .box-description{	
 	position: relative;	
 	top:70px;
 	margin-left: 50px;
 	width: 250px;
-	z-index: 99;	
+	z-index: 1;	
 }
-.carerrs-box txt{
-	
-}
-.carerrs-box .title{	
-	position: relative;
-	top: -550px;
-	margin-left: 40px;
-	z-index: 1;
-}/*
-.carerrs-box .carerrs-img{
-	float: right;
-	object-fit: cover;
+.profile-box{
 	width: 100%;	
+	height: 120px;
+	padding: 30px;
 	position: relative;
-	margin-top:40px;
-	min-height: 400px;	
-	z-index: 1;
-}*/
-/*
-.carerrs-page .carerrs-box .profile-box{
-	position: relative;
-	width: 100%;
-	z-index: 0;	
 	background-color: #009EE0;	
-	/*top:-200px;
-	adding: 15px;
-}/*
+}
 /* ======================= End Careers ============================ */
+
+/* ======================= Begin We ============================ */
+.we-box {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.vision-mision {
+	margin-top: 60px;
+}
+
+/* ======================= End We ============================ */
+
+/* ======================= Begin History ============================ */
+.history-box {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}/*
+.history .container p{
+	margin-bottom: 15px;
+}
+
+/* ======================= End History ============================ */
