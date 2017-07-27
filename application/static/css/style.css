@@ -271,6 +271,13 @@
 	margin-top: 60px;
 	margin-bottom: 30px;
 }
+
+.we-box img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+
 .vision-mision {
 	margin-top: 60px;
 }
@@ -281,9 +288,5 @@
 .history-box {
 	margin-top: 60px;
 	margin-bottom: 30px;
-}/*
-.history .container p{
-	margin-bottom: 15px;
 }
-
 /* ======================= End History ============================ */
